@@ -101,7 +101,6 @@ export class CFAlertDialog {
 			this._addActions(options.buttons, resolve);
 
 			viewController.presentViewControllerAnimatedCompletion(this._alertController, true, null);
-			console.log('resolved');
 		});
 	}
 
@@ -117,7 +116,6 @@ export class CFAlertDialog {
 	 */
 
 	private _addActions(buttons = [], resolve) {
-		console.log('adding actions');
 		buttons.forEach((btnOpts) => {
 			if (!btnOpts.buttonAlignment) btnOpts.buttonAlignment = CFAlertActionAlignment.JUSTIFIED;
 			if (btnOpts.textColor) btnOpts.textColor = new Color(btnOpts.textColor).ios;

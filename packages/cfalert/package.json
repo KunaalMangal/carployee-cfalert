@@ -1,7 +1,7 @@
 {
 	"name": "@nativescript/cfalert",
 	"version": "1.0.0",
-	"description": "Add a plugin description",
+	"description": "Adopted from https://github.com/shiv19/nativescript-cfalert-dialog for NS7+",
 	"main": "index",
 	"typings": "index.d.ts",
 	"nativescript": {
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/NativeScript/plugins.git"
+		"url": "https://github.com/Firetrip/carployee-cfalert.git"
 	},
 	"keywords": [
 		"NativeScript",
@@ -22,11 +22,10 @@
 		"Android"
 	],
 	"author": {
-		"name": "NativeScript",
-		"email": "oss@nativescript.org"
+		"name": "Roundtrip"
 	},
 	"bugs": {
-		"url": "https://github.com/NativeScript/plugins/issues"
+		"url": "https://github.com/Firetrip/carployee-cfalert/issues"
 	},
 	"license": "Apache-2.0",
 	"homepage": "https://github.com/NativeScript/plugins",
