@@ -86,6 +86,47 @@
 					}
 				}
 			}
+		},
+		"cfalert": {
+			"projectType": "library",
+			"schematics": {},
+			"root": "packages/cfalert",
+			"sourceRoot": "packages/cfalert",
+			"architect": {
+				"build": {
+					"builder": "@nrwl/node:package",
+					"options": {
+						"outputPath": "dist/packages/cfalert",
+						"tsConfig": "packages/cfalert/tsconfig.json",
+						"packageJson": "packages/cfalert/package.json",
+						"main": "packages/cfalert/index.ts",
+						"assets": [
+							"packages/cfalert/*.md",
+							"packages/cfalert/index.d.ts",
+							"LICENSE",
+							{
+								"glob": "**/*",
+								"input": "packages/cfalert/platforms/",
+								"output": "./platforms/"
+							}
+						]
+					}
+				},
+				"build.all": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["nx run cfalert:build", "node tools/scripts/build-finish.ts cfalert"],
+						"parallel": false
+					}
+				},
+				"focus": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["nx g @nativescript/plugin-tools:focus-packages cfalert"],
+						"parallel": false
+					}
+				}
+			}
 		}
 	},
 	"cli": {

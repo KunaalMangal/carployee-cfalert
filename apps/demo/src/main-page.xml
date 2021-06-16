@@ -2,11 +2,17 @@
   <Page.actionBar>
     <ActionBar title="Plugin Demos" icon="" class="action-bar"/>
   </Page.actionBar>
-  <StackLayout class="p-20">
-    <ScrollView class="h-full">
-      <StackLayout>
-        <Button text="add a package first" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+  <GridLayout rows="" columns="">
+      <Image src="~/landscape.jpg" stretch="aspectFill" />
+      <StackLayout class="p-20">
+        <Button class="btn btn-primary" text="Auto-Dismissable Alert" tap="{{ autoDismissableNotification }}" />
+        <Button class="btn btn-primary" text="Show Notification" tap="{{ showNotification }}" />
+        <Button class="btn btn-primary" text="Show Alert" tap="{{ showAlert }}" />
+        <Button class="btn btn-primary" text="Show Bottom Sheet" tap="{{ showBottomSheet }}" />
+        <Button class="btn btn-primary" text="Show Simple List (Android Only)" tap="{{ showSimpleList }}" />
+        <Button class="btn btn-primary" text="Show Single Choice List (Android Only)" tap="{{ showSingleChoiceList }}" />
+        <Button class="btn btn-primary" text="Show Multi Choice List (Android Only)" tap="{{ showMultiChoiceList }}" />
+        <Button class="btn btn-primary" text="Show Colored Alert" tap="{{ showColoredAlert }}" />
       </StackLayout>
-    </ScrollView>
-  </StackLayout>
+  </GridLayout>
 </Page>

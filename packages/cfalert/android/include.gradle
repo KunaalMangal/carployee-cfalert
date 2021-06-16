@@ -1,0 +1,20 @@
+/* Include.gradle configuration: http://docs.nativescript.org/plugins/plugins#includegradle-specification */
+
+android {
+	
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+  def supportVer = "22.2.0";
+  if(project.hasProperty("supportVersion")) {
+  	supportVer = supportVersion
+  }
+  compile "com.android.support:appcompat-v7:$supportVer"
+  compile "com.android.support:cardview-v7:$supportVer"
+  implementation group: 'com.crowdfire.cfalertdialog', name: 'cfalertdialog', version: '1.1.0'
+}
