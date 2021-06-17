@@ -57,17 +57,17 @@ module.exports = {
 			},
 		},
 		'⚙️': {
-			script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-			description: '_____________  @nativescript/*  _____________',
+			script: `npx cowsay "@carployee/* packages will keep your ⚙️ cranking"`,
+			description: '_____________  @carployee/*  _____________',
 		},
 		// packages
 		// build output is always in dist/packages
-		'@nativescript': {
-			// @nativescript/cfalert
+		'@carployee': {
+			// @carployee/cfalert
 			cfalert: {
 				build: {
 					script: 'nx run cfalert:build.all',
-					description: '@nativescript/cfalert: Build',
+					description: '@carployee/cfalert: Build',
 				},
 			},
 			'build-all': {
@@ -82,7 +82,7 @@ module.exports = {
 		focus: {
 			cfalert: {
 				script: 'nx run cfalert:focus',
-				description: 'Focus on @nativescript/cfalert',
+				description: 'Focus on @carployee/cfalert',
 			},
 			reset: {
 				script: 'nx run all:focus',

@@ -1,7 +1,7 @@
-# @nativescript/cfalert
+# @carployee/cfalert
 
 ```javascript
-ns plugin add @nativescript/cfalert
+ns plugin add @carployee/cfalert
 ```
 
 ## Usage
